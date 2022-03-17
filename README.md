@@ -19,6 +19,6 @@
   <dependency>
     <groupId>app.codings</groupId>
     <artifactId>Stack-Common</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
   </dependency>
 ```
