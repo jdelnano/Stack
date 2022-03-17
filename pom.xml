@@ -6,7 +6,7 @@
 
     <groupId>app.codings</groupId>
     <artifactId>Stack-Parent</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <name>Stack: Parent</name>
     <packaging>pom</packaging>
 
