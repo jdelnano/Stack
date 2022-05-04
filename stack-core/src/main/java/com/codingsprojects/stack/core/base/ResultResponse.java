@@ -1,6 +1,6 @@
-package app.codings.stack.core.base;
+package com.codingsprojects.stack.core.base;
 
-import app.codings.stack.core.result.Result;
+import com.codingsprojects.stack.core.result.Result;
 import org.springframework.http.ResponseEntity;
 
 public final class ResultResponse extends ResponseModel<ResultResponse>

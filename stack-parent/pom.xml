@@ -5,13 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>app.codings.stack</groupId>
+        <groupId>com.codingsprojects.stack</groupId>
         <artifactId>stack</artifactId>
-        <version>1.0.7</version>
+        <version>1.1.0</version>
     </parent>
 
     <artifactId>stack-parent</artifactId>
-    <version>1.0.7</version>
     <name>Stack Parent</name>
     <packaging>pom</packaging>
 

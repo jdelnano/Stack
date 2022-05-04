@@ -1,6 +1,6 @@
-package app.codings.stack.core.error;
+package com.codingsprojects.stack.core.error;
 
-import app.codings.stack.core.base.ResultResponse;
+import com.codingsprojects.stack.core.base.ResultResponse;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.ResponseEntity;

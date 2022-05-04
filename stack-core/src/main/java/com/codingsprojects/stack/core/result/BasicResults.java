@@ -1,4 +1,4 @@
-package app.codings.stack.core.result;
+package com.codingsprojects.stack.core.result;
 
 import org.springframework.http.HttpStatus;
 
@@ -22,10 +22,10 @@ public final class BasicResults
             .status(HttpStatus.OK)
             .build();
 
-    public static final Result STRING_IS_EMPTY =
+    public static final Result STRING_IS_BLANK =
         new Result.Builder()
             .code(21)
-            .message("String is empty")
+            .message("String is blank")
             .status(HttpStatus.BAD_REQUEST)
             .build();
 
@@ -62,7 +62,7 @@ public final class BasicResults
         return Stream.of(
             HELLO,
             STRING_SUCCESSFULLY_REVERSED,
-            STRING_IS_EMPTY,
+            STRING_IS_BLANK,
             STRING_CONTAINS_INVALID_CHARACTERS,
             CALCULATION_SUCCESSFUL,
             DATA_CONTAINS_MISSING_INTEGERS,

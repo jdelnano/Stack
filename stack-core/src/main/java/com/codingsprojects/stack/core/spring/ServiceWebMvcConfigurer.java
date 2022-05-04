@@ -1,4 +1,4 @@
-package app.codings.stack.core.spring;
+package com.codingsprojects.stack.core.spring;
 
 import org.springframework.http.HttpMethod;
 import org.springframework.security.web.method.annotation.AuthenticationPrincipalArgumentResolver;

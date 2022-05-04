@@ -1,4 +1,4 @@
-package app.codings.stack.core.result;
+package com.codingsprojects.stack.core.result;
 
 import java.util.Map;
 import java.util.stream.Collectors;

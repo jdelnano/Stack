@@ -1,7 +1,7 @@
-package app.codings.stack.core.error;
+package com.codingsprojects.stack.core.error;
 
-import app.codings.stack.core.result.Result;
-import app.codings.stack.core.base.ResultResponse;
+import com.codingsprojects.stack.core.result.Result;
+import com.codingsprojects.stack.core.base.ResultResponse;
 
 public final class ResultError extends RuntimeException
 {

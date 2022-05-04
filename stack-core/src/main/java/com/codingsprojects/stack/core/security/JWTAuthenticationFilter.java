@@ -1,4 +1,4 @@
-package app.codings.stack.core.security;
+package com.codingsprojects.stack.core.security;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
