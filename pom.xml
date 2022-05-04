@@ -22,6 +22,7 @@
         <spring.cloud.version>3.1.2</spring.cloud.version>
         <maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>
         <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
+        <maven.surefire.plugin.version>2.22.2</maven.surefire.plugin.version>
         <nimbus.jose.jwt.version>9.22</nimbus.jose.jwt.version>
         <stripe.java.verison>20.117.0</stripe.java.verison>
     </properties>
