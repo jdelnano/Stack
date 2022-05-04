@@ -4,21 +4,26 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>app.codings</groupId>
-    <artifactId>Stack-Parent</artifactId>
-    <version>1.0.6</version>
-    <name>Stack: Parent</name>
+    <groupId>app.codings.stack</groupId>
+    <artifactId>stack</artifactId>
+    <version>1.0.7</version>
+    <name>Stack</name>
     <packaging>pom</packaging>
+
+    <modules>
+        <module>stack-parent</module>
+        <module>stack-core</module>
+    </modules>
 
     <properties>
         <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.boot.version>2.6.3</spring.boot.version>
-        <spring.cloud.version>3.1.1</spring.cloud.version>
-        <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
+        <spring.boot.version>2.6.7</spring.boot.version>
+        <spring.cloud.version>3.1.2</spring.cloud.version>
+        <maven.compiler.plugin.version>3.10.1</maven.compiler.plugin.version>
         <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
-        <nimbus.jose.jwt.version>9.19</nimbus.jose.jwt.version>
-        <stripe.java.verison>20.104.0</stripe.java.verison>
+        <nimbus.jose.jwt.version>9.22</nimbus.jose.jwt.version>
+        <stripe.java.verison>20.117.0</stripe.java.verison>
     </properties>
 
     <dependencyManagement>
@@ -54,43 +59,29 @@
     </dependencyManagement>
 
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${maven.compiler.plugin.version}</version>
-                    <configuration>
-                        <source>${java.version}</source>
-                        <target>${java.version}</target>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>${maven.source.plugin.version}</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>jar-no-fork</goal>
-                            </goals>
-                            <id>attach-sources</id>
-                        </execution>
-                    </executions>
-                </plugin>
-                <plugin>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                    <groupId>org.springframework.boot</groupId>
-                    <version>${spring.boot.version}</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>repackage</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${maven.source.plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                        <id>attach-sources</id>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
 </project>
