@@ -16,8 +16,6 @@
 
 # Stack-Core
 
-[![](https://jitpack.io/v/com.codingsprojects/stack.svg)](https://jitpack.io/#com.codingsprojects/stack)
-
 #### Dependency
 ```xml
   <dependency>
@@ -28,8 +26,6 @@
 ```
 
 # Stack-Parent
-
-[![](https://jitpack.io/v/com.codingsprojects/stack.svg)](https://jitpack.io/#com.codingsprojects/stack)
 
 #### Dependency
 ```xml
