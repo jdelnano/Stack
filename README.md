@@ -1,5 +1,7 @@
 # Maven Repository
 
+[![](https://jitpack.io/v/com.codingsprojects/stack.svg)](https://jitpack.io/#com.codingsprojects/stack)
+
 ### Maven - JitPack
 
 #### Repository
@@ -14,7 +16,7 @@
 
 # Stack-Core
 
-[![](https://jitpack.io/v/app.codings.stack/stack-core.svg)](https://jitpack.io/#com.codingsprojects.stack/stack-core)
+[![](https://jitpack.io/v/com.codingsprojects/stack.svg)](https://jitpack.io/#com.codingsprojects/stack)
 
 #### Dependency
 ```xml
@@ -27,7 +29,7 @@
 
 # Stack-Parent
 
-[![](https://jitpack.io/v/app.codings.stack/stack-parent.svg)](https://jitpack.io/#acom.codingsprojects.stack/stack-parent)
+[![](https://jitpack.io/v/com.codingsprojects/stack.svg)](https://jitpack.io/#com.codingsprojects/stack)
 
 #### Dependency
 ```xml
