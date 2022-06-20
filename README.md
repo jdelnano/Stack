@@ -1,5 +1,7 @@
 # Stack
 
+A Web Project designed after CS122B at UCI. [CS122B Syllabus](https://docs.google.com/document/d/1HVGZseoxPYpEtQvXvL9jsC0mKGCuaFXLjioCIu-lu74/edit)
+
  - [Backend](#backend)
  - [Frontend](#frontend)
  - [Activities](#activities)
