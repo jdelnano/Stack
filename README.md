@@ -161,7 +161,7 @@ A Javascript framework that helps with web UI development by helping us easily c
   <dependency>
     <groupId>com.gitcodings.stack</groupId>
     <artifactId>stack-core</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
   </dependency>
 ```
 
@@ -172,6 +172,6 @@ A Javascript framework that helps with web UI development by helping us easily c
   <dependency>
     <groupId>com.gitcodings.stack</groupId>
     <artifactId>stack-parent</artifactId>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
   </dependency>
 ```
