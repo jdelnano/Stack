@@ -1,6 +1,5 @@
 # Stack
 
- - [Homework](#homework)
  - [Backend](#backend)
  - [Frontend](#frontend)
  - [Activities](#activities)
@@ -8,17 +7,11 @@
  - [Tools](#tools)
  - [Frameworks](#frameworks)
 
-## Homework
-
-### Homework 1: Setup Service
-Empty service to practice setting up project files and enviroment \
-[Starter Template](https://github.com/GitCodings/Stack-HW1-Setup-Service-Starter)
-
-### Homework 2: Basic Service
-Basic Spring Boot service to learn the basics of Spring. \
-[Starter Template](https://github.com/GitCodings/Stack-HW2-Basic-Service-Starter)
-
 ## Backend
+
+### Backend 0: Basic Service
+Basic Spring Boot service to learn the basics of Spring. \
+[Starter Template](https://github.com/GitCodings/Stack-BE0-Basic-Service-Starter)
 
 ### Backend 1: IDM Service
 The Identity Management Service for User to Login and Register as well as AccessToken creation, refreshing, and verification. \
