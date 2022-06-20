@@ -1,4 +1,4 @@
-package com.codingsprojects.stack.core.spring;
+package com.gitcodings.stack.core.spring;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

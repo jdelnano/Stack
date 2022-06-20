@@ -1,4 +1,4 @@
-package com.codingsprojects.stack.core.security;
+package com.gitcodings.stack.core.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nimbusds.jose.JOSEException;

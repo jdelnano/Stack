@@ -1,4 +1,4 @@
-package com.codingsprojects.stack.core.result;
+package com.gitcodings.stack.core.result;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

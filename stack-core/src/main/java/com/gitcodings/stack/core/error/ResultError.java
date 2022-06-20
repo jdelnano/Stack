@@ -1,7 +1,7 @@
-package com.codingsprojects.stack.core.error;
+package com.gitcodings.stack.core.error;
 
-import com.codingsprojects.stack.core.result.Result;
-import com.codingsprojects.stack.core.base.ResultResponse;
+import com.gitcodings.stack.core.result.Result;
+import com.gitcodings.stack.core.base.ResultResponse;
 
 public final class ResultError extends RuntimeException
 {

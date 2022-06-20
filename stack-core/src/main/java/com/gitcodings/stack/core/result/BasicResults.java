@@ -1,4 +1,4 @@
-package com.codingsprojects.stack.core.result;
+package com.gitcodings.stack.core.result;
 
 import org.springframework.http.HttpStatus;
 

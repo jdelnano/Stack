@@ -1,6 +1,6 @@
-package com.codingsprojects.stack.core.spring;
+package com.gitcodings.stack.core.spring;
 
-import com.codingsprojects.stack.core.security.JWTAuthenticationFilter;
+import com.gitcodings.stack.core.error.ResultErrorHandler;
 import org.springframework.context.annotation.Import;
 
 import java.lang.annotation.ElementType;
@@ -11,9 +11,10 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
 @Import({
-    JWTAuthenticationFilter.class,
+    ResultErrorHandler.class,
+    ServiceWebMvcConfigurer.class,
+    ServiceRequestLogger.class
 })
-@StackService
-public @interface SecuredStackService
+public @interface StackService
 {
 }

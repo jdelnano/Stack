@@ -1,6 +1,6 @@
-package com.codingsprojects.stack.core.base;
+package com.gitcodings.stack.core.base;
 
-import com.codingsprojects.stack.core.result.Result;
+import com.gitcodings.stack.core.result.Result;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import org.springframework.http.ResponseEntity;
 

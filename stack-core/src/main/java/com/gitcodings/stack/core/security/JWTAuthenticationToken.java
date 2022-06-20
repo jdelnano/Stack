@@ -1,4 +1,4 @@
-package com.codingsprojects.stack.core.security;
+package com.gitcodings.stack.core.security;
 
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
