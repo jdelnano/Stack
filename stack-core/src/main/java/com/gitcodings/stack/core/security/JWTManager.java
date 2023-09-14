@@ -115,12 +115,13 @@ public class JWTManager
     }
 
     private ECKey buildECKey(String fileName) throws ClassNotFoundException, FileNotFoundException, IOException, ParseException {
-         Class cls = Class.forName("JWTManager");
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream(fileName);
+        // Class cls = Class.forName("JWTManager");
 
-         // returns the ClassLoader object associated with this Class
-         ClassLoader cLoader = cls.getClassLoader();
-        // Get the InputStream for the file
-        InputStream inputStream = cLoader.getResourceAsStream(fileName);
+        // // returns the ClassLoader object associated with this Class
+        // ClassLoader cLoader = cls.getClassLoader();
+        //// Get the InputStream for the file
+        //InputStream inputStream = cLoader.getResourceAsStream(fileName);
         
         // Check if the file exists
         if (inputStream == null) {
