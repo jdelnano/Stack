@@ -21,6 +21,8 @@ import com.nimbusds.jwt.proc.DefaultJWTProcessor;
 import org.springframework.util.ResourceUtils;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.lang.ClassNotFoundException;
 import java.io.IOException;
 import java.text.ParseException;
 import java.time.Duration;
@@ -29,6 +31,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 /**
  * Manager class for JWT
@@ -63,7 +67,7 @@ public class JWTManager
     private final Duration maxRefreshTokenLifeTime;
 
     private JWTManager(Builder builder)
-        throws IOException, ParseException, JOSEException
+        throws ClassNotFoundException, IOException, ParseException, JOSEException
     {
         this.ecKey = buildECKey(builder.keyFileName);
         this.signer = new ECDSASigner(ecKey);
@@ -110,16 +114,26 @@ public class JWTManager
         return verifier;
     }
 
-    private ECKey buildECKey(String fileName)
-        throws IOException, ParseException
-    {
-        File keyFile = ResourceUtils.getFile(ResourceUtils.CLASSPATH_URL_PREFIX + fileName);
+    private ECKey buildECKey(String fileName) throws ClassNotFoundException, FileNotFoundException, IOException, ParseException {
+         Class cls = Class.forName("JWTManager");
 
-        Map<String, Object> jsonObject =
-            new ObjectMapper()
-                .readerForMapOf(Object.class)
-                .readValue(keyFile);
+         // returns the ClassLoader object associated with this Class
+         ClassLoader cLoader = cls.getClassLoader();
+        // Get the InputStream for the file
+        InputStream inputStream = cLoader.getResourceAsStream(fileName);
+        
+        // Check if the file exists
+        if (inputStream == null) {
+            throw new FileNotFoundException("File not found: " + fileName);
+        }
 
+        // Read the InputStream and convert it to a Map<String, Object>
+        Map<String, Object> jsonObject;
+        try (InputStreamReader reader = new InputStreamReader(inputStream)) {
+            jsonObject = new ObjectMapper().readerForMapOf(Object.class).readValue(reader);
+    }
+
+        // Parse the JSON object using ECKey.parse() (assuming it's a valid method)
         return ECKey.parse(jsonObject);
     }
 
@@ -197,7 +211,7 @@ public class JWTManager
 
             try {
                 return new JWTManager(this);
-            } catch (IOException | ParseException | JOSEException e) {
+            } catch (ClassNotFoundException | IOException | ParseException | JOSEException e) {
                 e.printStackTrace();
                 throw new RuntimeException(e);
             }
